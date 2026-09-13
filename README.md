@@ -16,3 +16,5 @@ The site brings together:
 - Speakers, volunteers, sponsors and community support
 
 The production site is a static Vercel deployment from the `main` branch of this repository.
+
+Production content refreshed September 13, 2026.
