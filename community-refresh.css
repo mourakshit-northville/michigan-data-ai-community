@@ -7,27 +7,27 @@
 /* 2026-09-21 visual-integrity pass
    Prevent merged same-color sections, excessive empty bands, and unstable
    image heights on the community homepage. */
-.section.community-section{padding:60px 0}
-.section.community-section .section-head{margin-bottom:28px}
-.section.community-section + .section.community-section{border-top:1px solid var(--line)}
-.section.alt.supporter-section{background:var(--soft)}
-.recent-photo-grid{align-items:start}
-.recent-photo-grid figure{height:100%}
-.recent-photo-grid img{height:320px;background:#eef2f6}
-.milestone-grid,.next-grid,.path-grid,.program-grid,.resource-grid{align-items:stretch}
-.milestone-card,.next-card,.path-card,.program-card,.resource-card{height:100%}
-.resource-card{min-height:0}
+.community-home-page .section.community-section{padding:60px 0}
+.community-home-page .section.community-section .section-head{margin-bottom:28px}
+.community-home-page .section.community-section + .section.community-section{border-top:1px solid var(--line)}
+.community-home-page .section.alt.supporter-section{background:var(--soft)}
+.community-home-page .recent-photo-grid{align-items:start}
+.community-home-page .recent-photo-grid figure{height:100%}
+.community-home-page .recent-photo-grid img{height:320px;background:#eef2f6}
+.community-home-page .milestone-grid,.community-home-page .next-grid,.community-home-page .path-grid,.community-home-page .program-grid,.community-home-page .resource-grid{align-items:stretch}
+.community-home-page .milestone-card,.community-home-page .next-card,.community-home-page .path-card,.community-home-page .program-card,.community-home-page .resource-card{height:100%}
+.community-home-page .resource-card{min-height:0}
 
 /* The previous generic image-audit rule used height:100% on hero collage
    images. With auto-height figures this can produce large empty-looking
    regions. Give photography a stable frame and keep only the flyer contained. */
-.event-collage img{height:220px!important;min-height:0!important;object-fit:cover!important;padding:0!important;background:#eef2f6}
-.event-collage figure:first-child img{height:280px!important}
-.event-collage figure:nth-child(2) img{object-fit:contain!important;padding:10px!important;background:#fff}
+.community-home-page .event-collage img{height:220px!important;min-height:0!important;object-fit:cover!important;padding:0!important;background:#eef2f6}
+.community-home-page .event-collage figure:first-child img{height:280px!important}
+.community-home-page .event-collage figure:nth-child(2) img{object-fit:contain!important;padding:10px!important;background:#fff}
 
 @media(max-width:900px){
-  .section.community-section{padding:48px 0}
-  .section.community-section .section-head{margin-bottom:22px}
-  .recent-photo-grid img{height:auto}
-  .event-collage img,.event-collage figure:first-child img{height:auto!important;min-height:0!important}
+  .community-home-page .section.community-section{padding:48px 0}
+  .community-home-page .section.community-section .section-head{margin-bottom:22px}
+  .community-home-page .recent-photo-grid img{height:auto}
+  .community-home-page .event-collage img,.community-home-page .event-collage figure:first-child img{height:auto!important;min-height:0!important}
 }
